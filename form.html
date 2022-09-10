@@ -8,9 +8,27 @@
 </head>
 <body>
     <h1><center>Calculadora</center></h1>
-    <form method="post" oninput="resultado.value = (num1.value) + parseInt(num2.value)">
+    <form method="post" oninput="resultado.value = parseInt(num1.value) + parseInt(num2.value)">
         <input type="number" id="num1", value="0">
         +
+        <input type="number" id="num2">
+        <output name="resultado" for="num1 num2"></output>
+    </form>
+    <form method="post" oninput="resultado.value = parseInt(num1.value) - parseInt(num2.value)">
+        <input type="number" id="num1", value="0">
+        -
+        <input type="number" id="num2">
+        <output name="resultado" for="num1 num2"></output>
+    </form>
+    <form method="post" oninput="resultado.value = parseInt(num1.value) * parseInt(num2.value)">
+        <input type="number" id="num1", value="0">
+        *
+        <input type="number" id="num2">
+        <output name="resultado" for="num1 num2"></output>
+    </form>
+    <form method="post" oninput="resultado.value = parseInt(num1.value) / parseInt(num2.value)">
+        <input type="number" id="num1", value="0">
+        /
         <input type="number" id="num2">
         <output name="resultado" for="num1 num2"></output>
     </form>
