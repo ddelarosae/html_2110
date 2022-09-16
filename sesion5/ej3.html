@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Ejemplo</title>
+</head>
+<body>
+    <h1>Ejemplo Switch</h1>
+    <script>
+        function devuelveNota(nota){
+            var notaFinal;
+            switch (notaInt){
+                case 5:
+                    notaFinal="aprobado";
+                    document.write(notaFinal);
+                    break;
+                case 6:
+                    notaFinal="bien";
+                    document.write(notaFinal);
+                    break;
+                case 7:
+                    notaFinal="notable";
+                    document.write(notaFinal);
+                    break;
+                case 8:
+                    notaFinal="notable";
+                    document.write(notaFinal);
+                    break;
+                case 9:
+                    notaFinal="excelso";
+                    document.write(notaFinal);
+                    break;
+                case 10:
+                    notaFinal="excelente";
+                    document.write(notaFinal);
+                    break;
+                default:
+                    notaFinal="reprobado";
+                    document.write(notaFinal);
+            }
+            return(notaFinal);
+        }
+        var nota=prompt("Ingrese su nota: ");
+        var notaInt=parseInt(nota);
+        console.log(notaInt);
+        devuelveNota(notaInt);
+    </script>
+</body>
+</html>
