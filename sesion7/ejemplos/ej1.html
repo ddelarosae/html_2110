@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objeto window</title>
+</head>
+<body>
+    <h1>métodos del objeto window</h1>
+    <button type="button" onclick="abrir()">abrir</button>
+    <script>
+        var edad=prompt("Indica tu edad");
+        var ventana;
+        while(!confirm("Tu edad es: "+edad)) {
+            edad=prompt("Indica tu edad");
+        }
+        if(edad < 18) {
+            alert("Eres menor de edad, aún no puedes ir a la disco");
+        } else {
+            alert("Eres mayor de edad, ya puedes ir a la disco");
+        }
+        document.write("Este boton crea y cierra una ventana");
+        function cerrar() {
+            ventana.close();
+        }
+        function abrir(){
+            ventana=window.open("","ventana","width=200,height=200");
+            setTimeout(cerrar,2000);//1s->1000ms
+        }
+    </script>
+        <br>
+        <a href="javascript:window.print()">Imprimir esta página</a>
+</body>
+</html>

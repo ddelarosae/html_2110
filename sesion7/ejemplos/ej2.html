@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso del navigator</title>
+</head>
+<body>
+    <h1>Uso del navigator</h1>
+    <p id="dato"></p>
+    <button type="button" onclick="navegador()">Click</button>
+    <script type="text/javascript">
+        function navegador() {
+            document.getElementById("dato").innerHTML="informacion del navegador: "+navigator.appVersion;
+        }
+    </script>
+</body>
+</html>
