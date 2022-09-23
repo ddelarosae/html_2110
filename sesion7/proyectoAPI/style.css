@@ -1,0 +1,55 @@
+body{
+    background-color: lightcyan;
+    color: purple;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    padding: 40px;
+}
+h1{
+    text-align: center;
+    font-size: 54px;
+    text-transform: uppercase;
+
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+#pokedex{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    padding-inline-start: 0;
+    grid-gap: 20px;
+}
+.card{
+    list-style: none;
+    padding: 40px;
+    background-color:turquoise;
+    color: black;
+    text-align: left;
+}
+.card-image{
+    height: 80px;
+}
+.card-title{
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+.card-subtitle{
+    margin-top: 5px;
+    color: brown;
+    font-weight: lighter;
+}
+.card:hover{
+    animation: bounce 1s linear;
+}
+@keyframes bounce{
+    20%{transform: translateY(-8px);}
+    40%{transform: translateY(-6px);}
+    60%{transform: translateY(-4px);}
+    80%{transform: translateY(-2px);}
+    100%{transform: translateY(0);}
+}
