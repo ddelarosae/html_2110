@@ -22,7 +22,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
     padding-inline-start: 0;
-    grid-gap: 20px;
+    grid-gap: 40px;
 }
 .card{
     list-style: none;
@@ -32,16 +32,20 @@ h2{
     text-align: left;
 }
 .card-image{
-    height: 80px;
+    height: 100px;
 }
 .card-title{
     margin-bottom: 0px;
-    font-size: 12px;
+    font-size: 8px;
 }
 .card-subtitle{
     margin-top: 5px;
     color: brown;
     font-weight: lighter;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 12px;
+    text-align: center;
+
 }
 .card:hover{
     animation: bounce 1s linear;
